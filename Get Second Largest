@@ -1,0 +1,7 @@
+function getSecondLargest(nums) {
+    let duplics = Array.from(new Set(nums));
+    duplics.sort (function(x, y) { return x < y; } );
+   
+   return duplics[1];
+}
+
